@@ -18,4 +18,5 @@ PROMPT='%{$fg[gray]%}[%T][%n@%m%{$reset_color%}:$FG[069]%~%{$reset_color%}%{$fg[
 
 
 # %W instead of %D for us
-RPROMPT='$FG[059][%D %*]%(?,$FG[022][R-$?],$FG[130][R-$?])$FG[024][!%!]%{$reset_color%}'
+RPROMPT='%(?,,$FG[130][R-$?])$FG[059][%D %*]%(?,$FG[022][R-$?],)$FG[024][!%!]%{$reset_color%}'
+#RPROMPT='$FG[059][%D %*]%(?,$FG[022][R-$?],$FG[130][R-$?])$FG[024][!%!]%{$reset_color%}'
