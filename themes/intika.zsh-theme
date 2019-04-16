@@ -1,6 +1,6 @@
 ZSH_THEME_GIT_PROMPT_PREFIX=" (%{$fg[green]%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%})"
-ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg_bold[red]%} ✗%{$reset_color%}"
+ZSH_THEME_GIT_PROMPT_DIRTY="$FG[130] ✗%{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_UNTRACKED="%{$fg[cyan]%} ±%{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_AHEAD="%{$fg[cyan]%} ▴%{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_BEHIND="%{$fg[magenta]%} ▾%{$reset_color%}"
@@ -12,7 +12,7 @@ function prompt_char {
 
 # Line every return
 # PROMPT='$FG[237]----------------------------------------------------------------------------------------%{$reset_color%}
-PROMPT='[%{$fg[gray]%}%n@%m%{$reset_color%}:$FG[069]%~%{$reset_color%}$(git_prompt_info)]$(prompt_char) '
+PROMPT='%{$fg[gray]%}[%T][%n@%m%{$reset_color%}:$FG[069]%~%{$reset_color%}%{$fg[gray]%}$(git_prompt_info)]$(prompt_char)%{$reset_color%} '
 
 
 # %W instead of %D for us
